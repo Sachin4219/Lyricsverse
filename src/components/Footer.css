@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.footer-main {
+    width: fit-content;
+    height: fit-content;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 8px 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .footer-main {
+        padding: 8px 10px;
+    }
+}

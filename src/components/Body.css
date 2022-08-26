@@ -1,0 +1,130 @@
+.container{
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    font-family: monospace;
+    font-size: 35px;
+    text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
+    color: rgb(50, 50, 50);
+    /* animation: fade-in 1.5s ease-out forwards; */
+    /* transform: translate(1000px, 0); */
+}
+
+@keyframes fade-in {
+    0% {}
+
+    80% {
+        transform: translate(-200px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.searchBar {
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    /* background-color: #22affc; */
+    background-color: white;
+    margin: 30px auto;
+    border: 2px solid black;
+    /* color: white; */
+    /* color: #000; */
+}
+
+.searchBar input {
+    width: 300px;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1.1px;
+    padding: 5px 0;
+    margin-left: 10px;
+    /* color: white; */
+    background-color: white;
+    color: #111;
+}
+
+@media screen and (max-width:800px) {
+    .searchBar input {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .searchBar {
+        max-width: 200px;
+        width: calc(100vw - 20px);
+        padding: 0;
+    }
+
+    .searchBar input {
+        width: 80%;
+        padding: 5px 0;
+        margin-left: 10px;
+    }
+}
+
+.search-btn {
+    border-radius: 20px;
+}
+
+.search-btn i {
+    color: #333;
+}
+
+.lyrics-container{
+    width: 60%;
+    height: auto;
+    box-sizing: border-box;
+    height: auto;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 20px 30px;
+    margin: 50px 0;
+    background-color: rgb(230,230,230);
+    text-align: center;
+}
+.lyrics-container h2{
+    margin: 0;
+    margin-bottom: 20px;
+}
+#lyrics-text{
+    white-space: pre-wrap;
+}
+.printbtn{
+    margin: 0 auto 20px auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+    color: black;
+    background-color: #999;
+    box-shadow: 0 0 10px #333;
+}
+.printbtn:hover{
+    box-shadow: 0 0 6px #333;
+}
+.printbtn:active {
+    box-shadow:none;
+}
