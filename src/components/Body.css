@@ -11,8 +11,22 @@
     font-size: 35px;
     text-shadow: 2px 2px rgba(50, 50, 50, 0.4);
     color: rgb(50, 50, 50);
-    /* animation: fade-in 1.5s ease-out forwards; */
-    /* transform: translate(1000px, 0); */
+}
+
+.Api-Banner{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        font-family: monospace;
+        font-size: 30px;
+        background-color: rgb(159, 132, 158);
+        color: #fff;
+}
+
+.Api-Banner a{
+    text-decoration: none;
+    color: rgb(235, 32, 32);
 }
 
 @keyframes fade-in {
