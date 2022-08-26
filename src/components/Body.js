@@ -63,9 +63,11 @@ function print2pdf(){
             <div className="container">
 
                 <h1 className="header-text">Welcome to LyricsVerse</h1>
+                <h2 className="Api-Banner">Made Using <a href="https://www.lyrics.com/api.php">STANDS4 Api</a></h2>
+
 
                 <div  className="searchBar" style={{boxShadow:focus ? "0px 0px 4px 4px rgba(0,0,0,0.5)" : "none"}}>
-                    <input id="search-input" onFocus={() => setFocus(true)} onBlur={()=>setFocus(false)} onKeyDown={(e) => checkEnter(e)} onChange={(event) => setSong(event.target.value)}/>
+                    <input id="search-input" placeholder="Rap God" onFocus={() => setFocus(true)} onBlur={()=>setFocus(false)} onKeyDown={(e) => checkEnter(e)} onChange={(event) => setSong(event.target.value)}/>
                     <div id="search-btn" onClick={getLink}>
                             <i className="fa-solid fa-magnifying-glass"></i>
                     </div>
